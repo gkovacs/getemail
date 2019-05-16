@@ -1,0 +1,1 @@
+web: gunicorn getemail:app

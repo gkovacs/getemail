@@ -1,0 +1,6 @@
+{
+  "name": "getemail",
+  "description": "An app in Flask to get emails via IMAP.",
+  "repository": "https://github.com/gkovacs/getemail",
+  "keywords": ["flask", "heroku"]
+}
