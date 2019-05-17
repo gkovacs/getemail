@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# md5: 1e90fe12e0053e514873f36ab333f3c3
+# md5: c0221f6df0709c828a76c375dcf20a03
 #!/usr/bin/env python
 # coding: utf-8
 
@@ -58,7 +58,7 @@ def get_emails_cs377u():
     email_message = email.message_from_bytes(raw_email)
     message = []
     message.append('From: ' + decode_header(email_message['From']))
-    message.append('Subject: ' + email_message['Subject'])
+    message.append('Subject: ' + decode_header(email_message['Subject']))
     message.append('Date: ' + str(email_date_to_local_arrow(email_message['Date'])))
     #raw_email_string = raw_email.decode('utf-8')
     #print(raw_email_string)
